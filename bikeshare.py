@@ -200,33 +200,7 @@ def user_stats(df,city):
     print('-'*40)
          
 
-def display_data(df):
-
-    while True:
-        response=['yes','no']
-        choice= input("Would you like to view individual trip data (5 entries)? Type 'yes' or 'no'\n").lower()
-        if choice in response:
-            if choice=='yes':
-                start=0
-                end=5
-                data = df.iloc[start:end,:9]
-                print(data)
-            break     
-        else:
-            print("Please enter a valid response")
-    if  choice=='yes':       
-            while True:
-                choice_2= input("Would you like to view more trip data? Type 'yes' or 'no'\n").lower()
-                if choice_2 in response:
-                    if choice_2=='yes':
-                        start+=5
-                        end+=5
-                        data = df.iloc[start:end,:9]
-                        print(data)
-                    else:    
-                        break  
-                else:
-                    print("Please enter a valid response")         		 
+     		 
 
 
 def main():
@@ -238,7 +212,6 @@ def main():
         station_stats(df)
         trip_duration_stats(df)
         user_stats(df,city)
-        display_data(df)
 
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
