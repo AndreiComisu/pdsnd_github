@@ -21,3 +21,7 @@ This project focuses on pandas library usage and simple statistics methods to pe
 * [xhlow](https://github.com/xhlow) - xhlow's repository helped with understanding the structure and details of certain functions.
 * [philribbens](https://github.com/philribbens) - philribben's repository also added to better understanding of the structure for this project.
 
+# Requirements
+
+* Language: Python 3.6 or above
+* Libraries: pandas, numpy, time
